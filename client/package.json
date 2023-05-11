@@ -1,0 +1,27 @@
+{
+  "name": "vue",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ionic/core": "^7.0.5",
+    "@ionic/vue": "^7.0.0-rc.5",
+    "@ionic/vue-router": "^7.0.0-rc.5",
+    "apexcharts": "^3.40.0",
+    "axios": "^1.4.0",
+    "chart.js": "^3.5.0",
+    "element-plus": "^2.3.4",
+    "intl-tel-input": "^18.1.5",
+    "ion-intl-tel-input": "^1.0.5",
+    "vue": "^3.2.47",
+    "vue3-google-map": "^0.15.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.1",
+    "vite": "^4.3.4"
+  }
+}
