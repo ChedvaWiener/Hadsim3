@@ -8,7 +8,7 @@ public class TwitterTowers {
 		int height = 0,width =0;
 		int option = RECTANGLE;
 		System.out.println("Twitter Towers");
-		// option3 is exit
+
 		while(!(option == EXIT))
 		{
 			System.out.println("Please choose a tower\npress 1 for rectangle\npress 2 for triangular\npress 3 to exit");
@@ -40,17 +40,17 @@ public class TwitterTowers {
 				if (option == PERIMETER)
 				{
 					// pythagorean theorem
-					double c = Math.sqrt(Math.pow(height, 2) + Math.pow(width, 2));
+					double c = Math.sqrt(Math.pow(height, 2) + Math.pow(width/2, 2));
 					System.out.println("Tower perimeter  is "+ (c*2 + width));
 				}
 				else if (option == PRINT)
 				{
 					if(width%2 == 0 ||width > height*2)
 					{
-						System.out.println("Invalid dimensions for  triangle");
+						System.out.println("Invalid dimensions for triangle");
 						break;
 					}
-						// print the triangle
+						// print the triangle 
 						int innerRows = (width-2)/2; // number of the inner rows
 						int printsPerLine = (height-2)/innerRows; // number of stars for inner line
 						int firstLinePrints = (height-2)%innerRows + printsPerLine; // number of stars for the first inner line
@@ -63,6 +63,7 @@ public class TwitterTowers {
 								nPrints = firstLinePrints;
 							else if(i!=1&&i< height-1 )
 								nPrints = printsPerLine;
+							else nPrints = 1;
 							for(int j=1; j<=nPrints && i <= height;j++,i++)
 							{	
 								for (int sp = 1; sp <= nSpace; ++sp) 
@@ -89,5 +90,4 @@ public class TwitterTowers {
 	}
 
 }
-
 
